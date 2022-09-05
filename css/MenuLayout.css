@@ -1,0 +1,111 @@
+.top-page{
+    background-color: #fdfdfd;
+    border-bottom: 1px solid #9a9292;
+
+}
+.top-page-left{
+    float: left;
+}
+.top-page-right{
+    float: right;
+}
+li {
+    list-style: none;
+}
+.top-page li{
+    float: left;
+}
+.top-page-left li a{
+    color: #423636;
+    margin-right: 20px;
+}
+.top-page-left li a i{
+    margin-right: 10px;
+}
+.top-page-right li a{
+    color: #5d5555;
+    margin-right: 20px;
+}
+.top-page-right li i{
+    margin-right: 10px;
+    color: #222222;
+}
+.logo{
+    float: left;
+}
+.top-cart{
+    float: right;
+}
+.menu{
+    float: right;
+}
+.menu li{
+    float: left;
+}
+.menu li a{
+    float: left;
+    margin-right: 20px;
+    font-size: 16px;
+    color: #503a3c;
+    line-height: 54px;
+}
+.top-cart a{
+    margin-left:20px ;
+    font-size: 16px;
+    color: #4f3d3f;
+    line-height: 54px;
+}
+.logo a{
+    font-size: 48px;
+    color: #800712;
+    font-weight: 500;
+    text-shadow: -5px -3px #ea4e4e;
+}
+header{
+    background-color: #efe9e9;
+    margin: 5px;
+}
+.mini-content{
+    float: left;
+    border: 1px solid red;
+    width: 45%;
+    height: 480px;
+    background-color: #eee7e7;
+    margin: 10px;
+}
+.date{
+    float:left;
+}
+.comment {
+    float: right;
+}
+.sidebar{
+    padding: 5px;
+}
+h3{
+    margin: 1px;
+    color: coral;
+}
+.text-content{
+    padding: 10px;
+}
+.text-day{
+    padding: 10px;
+
+}
+button[type=submit]{
+    width: 50px;
+    height: 25px;
+    margin-top: 5px;
+    margin-right: 5px;
+    padding-bottom: 50px;
+
+}
+div.menu_list:hover{
+    transform: scale(1.5);
+    color: #ea4e4e;
+    background-color: #476483;
+}
+input[type=text][name=cafe]{
+    margin-top: 19px;
+}

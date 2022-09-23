@@ -2,9 +2,104 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Service</title>
+    <link rel="stylesheet" href="list/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="css/coffee.css">
+    <link rel="stylesheet" type="text/css" href="css/layout.css">
+    <link rel="stylesheet" href="icon/css/all.css"/>
 </head>
 <body>
+<div class="main">
+    <nav class="container">
+        <div class="page-left">
+            <ul>
+                <li><a href="home%20coffee.html" target="_self">Home</a></li>
+                <li>Menu</li>
+                <li><a href="About.html" target="_self">About us</a></li>
+                <li>Contact us</li>
+                <li>Sale</li>
+            </ul>
+            <ul class="icon-cart">
+                <li><i class="fa fa-cart-shopping"></i></li>
+            </ul>
+        </div>
+    </nav>
+    <img src="anh/logo.png" />
+</div>
+<div class="container-fluid my-5">
+    <div class="container">
+        <div class="reservation position-relative overlay-top overlay-bottom">
+            <div class="row align-items-center">
+                <div class="col-lg-6 my-5 my-lg-0">
+                    <div class="p-5">
+                        <div class="mb-4">
+                            <h1 class="display-3 text-primary">30% OFF</h1>
+                            <h1 class="text-black">For Online Reservation</h1>
+                        </div>
+                        <p class="text-black">Have a trouble with fiding a seat ? Someone took your favorite spot ? Don't want to walk in and walk out still can't find a seat ? Don't worry, booking now !</p>
+                        <ul class="list-inline text-black m-0">
+                            <li class="py-2"><i class="fa fa-check text-black mr-3"></i>Always have a table for you and your group</li>
+                            <li class="py-2"><i class="fa fa-check text-black mr-3"></i>Save your time and money</li>
+                            <li class="py-2"><i class="fa fa-check text-black mr-3"></i>Contact us anytime</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="text-center p-5" style="background: rgb(255,98,0);">
+                        <h1 class="text-black mb-4 mt-5">Book Your Table</h1>
+                        <form class="mb-5">
+                            <div class="form-group">
+                                <input type="text" class="form-control bg-transparent border-primary p-4" placeholder="Name"
+                                       required="required" />
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control bg-transparent border-primary p-4" placeholder="Email"
+                                       required="required" />
+                            </div>
+                            <div class="form-group">
+                                <div class="date" id="date" data-target-input="nearest">
+                                    <input type="text" class="form-control bg-transparent border-primary p-4 datetimepicker-input" placeholder="Date" data-target="#date" data-toggle="datetimepicker"/>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="time" id="time" data-target-input="nearest">
+                                    <input type="text" class="form-control bg-transparent border-primary p-4 datetimepicker-input" placeholder="Time" data-target="#time" data-toggle="datetimepicker"/>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <select class="custom-select bg-transparent border-primary px-4" style="height: 49px;">
+                                    <option selected>Person</option>
+                                    <option value="1">Person 1</option>
+                                    <option value="2">Person 2</option>
+                                    <option value="3">Person 3</option>
+                                    <option value="3">Person 4</option>
+                                </select>
+                            </div>
 
+                            <div>
+                                <button class="btn btn-primary btn-block font-weight-bold py-3" type="submit">Book Now</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="section footer">
+    <div class="container">
+        <div class="socialFoot">
+            <ul>
+                <li><a style="color: wheat;" href="https://www.facebook.com/profile.php?id=100002910163636" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>Facebook</li>
+                <li><a style="color: wheat;" href="https://youtu.be/ji8cjaFUIU0" target="_blank"><i class="fa-brands fa-square-youtube"></i></a>Youtube</li>
+                <li><a style="color: wheat;" href="https://www.instagram.com/im.concobebe/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>Instagram</li>
+            </ul>
+        </div>
+        <div class="copyright">
+            &copy; 2022 Tsunami Coffee. All rights reserved
+        </div>
+    </div>
+</footer>
+<script type="text/javascript" src="list/dist/js/bootstrap.js" ></script>
 </body>
 </html>

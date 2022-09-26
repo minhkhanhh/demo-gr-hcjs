@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+    <link rel="stylesheet" href="list/dist/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/thucdon.css">
+    <link rel="stylesheet" type="text/css" href="css/layout.css">
+    <link rel="stylesheet" href="icon/css/all.css" />
+    <link rel="stylesheet" href="css/hover-css.css"  type="text/css">
+    <link rel="stylesheet" type="text/css" href="css-detail/sanpham1.css">
+</head>
+
+<body>
+<div class="main">
+    <nav class="container">
+        <div class="page-left">
+            <ul>
+                <li><a href="home%20coffee.html" target="_self" style="color:white; text-decoration: none">Home</a></li>
+                <li><a href="thucdon.html" target="_self" style="color: white; text-decoration: none">Menu</a></li>
+                <li><a href="About.html" target="_self" style="color: white; text-decoration: none">About us</a></li>
+                <li><a href="Contact.html" target="_self" style="color: white; text-decoration: none">Contact us</a></li>
+                <li><a href="Service.html" target="_self" style="color: white; text-decoration: none">Service</a></li>
+            </ul>
+            <ul class="icon-cart">
+                <li><i class="fa fa-cart-shopping"></i></li>
+            </ul>
+        </div>
+    </nav>
+    <img src="anh/logo.png" />
+</div>
+
+<div class="container">
+    <div class="card">
+        <div class="container-fliud">
+            <div class="wrapper row">
+                <div class="preview col-md-6">
+
+                    <div class="preview-pic tab-content">
+                        <div class="tab-pane active" id="pic-1"><img src="anh/Bac-xiu-la-gi-nguon-goc-va-cach-lam-bac-xiu-thom-ngon-don-gian-tai-nha-0-1200x676.jpg" /></div>
+
+                    </div>
+
+
+                </div>
+                <div class="details col-md-6">
+                    <h3 class="product-title"> CÀ PHÊ SỮA ĐÁ </h3>
+
+                    <p class="product-description">Hương vị cà phê Việt Nam đích thực! Từng hạt cà phê hảo hạng được chọn bằng tay, phối trộn độc đáo giữa hạt Robusta từ cao nguyên Việt Nam, thêm Arabica thơm lừng. Cà phê được pha từ Phin truyền thống, hoà cùng sữa đặc sánh và thêm vào chút đá tạo nên ly Phin Sữa Đá – Đậm Đà Chất Phin.</p>
+
+                    <h5 class="sizes">sizes:
+                        <span class="size" data-toggle="tooltip" title="small" style="cursor: pointer; border-style: solid;"  onclick='document.getElementById("giatienhienthi").innerHTML = "25.000VNĐ"'>s</span>
+                        <span class="size" data-toggle="tooltip" title="medium" style="cursor: pointer; border-style: solid;"  onclick='document.getElementById("giatienhienthi").innerHTML = "5.000VNĐ"'>m</span>
+                        <span class="size" data-toggle="tooltip" title="large" style="cursor: pointer; border-style: solid;"  onclick='document.getElementById("giatienhienthi").innerHTML = "dmm"'>l</span>
+                        <span class="size" data-toggle="tooltip" title="xtra large" style="cursor: pointer; border-style: solid;"  onclick='document.getElementById("giatienhienthi").innerHTML = "dmm"'>xl</span>
+                    </h5>
+                    <div>Giá tiền <p id="giatienhienthi">noidunggoc</p> </div>
+                    <div class="action">
+                        <button class="add-to-cart btn btn-default" type="button" onclick="myFunction()" >Mua Hàng</button>
+                        <button class="like btn btn-default" type="button" onclick="myFunction1()" ><span class="fa fa-heart"></span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="section footer">
+    <div class="container">
+        <div class="socialFoot">
+            <ul>
+                <li><a style="color: wheat; text-decoration: none"
+                       href="https://www.facebook.com/profile.php?id=100002910163636" target="_blank"><i
+                        class="fa-brands fa-square-facebook"></i> Facebook</a></li>
+                <li><a style="color: wheat; text-decoration: none" href="https://youtu.be/ji8cjaFUIU0" target="_blank"><i
+                        class="fa-brands fa-square-youtube"></i> Youtube</a></li>
+                <li><a style="color: wheat; text-decoration: none" href="https://www.instagram.com/im.concobebe/"
+                       target="_blank"><i class="fa-brands fa-square-instagram"></i> Instagram</a></li>
+            </ul>
+        </div>
+        <div class="copyright">
+            &copy; 2022 Tsunami Coffee. All rights reserved
+        </div>
+    </div>
+</footer>
+<script type="text/javascript" src="list/dist/js/bootstrap.js"></script>
+</body>
+
+</html>
+
+<script>
+    function myFunction() {
+        alert("Mua Hàng Thành Công");
+    }
+    function myFunction1() {
+        alert("Cảm Ơn Bạn Đã Yêu Thích Sản Phẩm Của Chúng Tôiii");
+    }
+
+    var giatien = "25.000 VNĐ";
+    document.getElementById("giatienhienthi").innerHTML =giatien;
+</script>

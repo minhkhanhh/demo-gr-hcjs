@@ -183,7 +183,7 @@ footer .container {
     width: 100%;
     height: auto;
 
-    background-image: url("/anh/banner.jpg");
+    background-image: url("/anh/anh7.jpg");
 }
 
 .thucdon-chu{
@@ -192,4 +192,13 @@ footer .container {
     border: orange;
     margin: 50px 50px 50px 50px;
     padding: 50px 50px 50px 50px;
+    color: white;
 }
+
+.col-4 a {
+    color: brown;
+}
+#thucdon1 {
+    width: 140px;
+}
+

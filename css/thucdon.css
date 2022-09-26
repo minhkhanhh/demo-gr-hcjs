@@ -178,3 +178,18 @@ footer .container {
 .thucdon {
     height: 100px;
 }
+
+.thucdon-img{
+    width: 100%;
+    height: auto;
+
+    background-image: url("/anh/banner.jpg");
+}
+
+.thucdon-chu{
+    width: 30%;
+    height: 80%;
+    border: orange;
+    margin: 50px 50px 50px 50px;
+    padding: 50px 50px 50px 50px;
+}

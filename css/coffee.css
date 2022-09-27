@@ -13,15 +13,15 @@ body {
 }
 
 .main {
-    background-image: url('../anh/caffee.png');
+    background-image: url('../anh/anh7.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 52rem;
+    height: 30rem;
     padding-top: 1rem;
 }
 
 .main img {
-    width: 15rem;
+    width: 12rem;
     display: block;
     margin: auto;
     margin-top: 5rem;

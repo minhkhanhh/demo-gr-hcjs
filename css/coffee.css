@@ -70,7 +70,7 @@ li {
 }
 
 .rating {
-    background-color: #473732;
+    background-color: #fffbf2;
     height: 15rem;
     padding: 0 1rem;
     color: white;
@@ -176,5 +176,28 @@ footer .container {
     /*border-radius: 3px 3px 3px 3px;*/
     font-size: 22px;
 
+}
+.back-to-top {
+    position: sticky;
+    bottom: 20px;
+    margin-right: 10px;
+    place-self: end;
+    margin-top: calc(100vh + var(--offset));
+    float: right;
+
+    /* visual styling */
+    width: 45px;
+    aspect-ratio: 1;
+    background: #ff8b24;
+    border-radius: 10px;
+}
+
+.back-to-top:before {
+    content: "";
+    position: absolute;
+    inset: 30%;
+    transform: translateY(20%) rotate(-45deg);
+    border-top: 5px solid #fff;
+    border-right: 5px solid #fff;
 }
 

@@ -11,6 +11,10 @@ body {
     max-width: 960px;
     margin: 0 auto;
 }
+.content{
+    float: left;
+    width: 100% !important;
+}
 
 .main {
     background-image: url('../anh/anh7.jpg');
@@ -179,15 +183,35 @@ footer .container {
 }
 
 .thucdon {
-    height: 100px;
+    height: 250px;
+    width: 280px;
 }
-
-
-
 
 .col-4 a {
     color: brown;
 }
-#thucdon1 {
-    width: 140px;
+
+.back-to-top {
+
+    position: sticky;
+    bottom: 20px;
+    margin-right: 10px;
+    place-self: end;
+    margin-top: calc(100vh + var(--offset));
+    float: right;
+
+    /* visual styling */
+    width: 45px;
+    aspect-ratio: 1;
+    background: #ff8b24;
+    border-radius: 10px;
+}
+
+.back-to-top:before {
+    content: "";
+    position: absolute;
+    inset: 30%;
+    transform: translateY(20%) rotate(-45deg);
+    border-top: 5px solid #fff;
+    border-right: 5px solid #fff;
 }

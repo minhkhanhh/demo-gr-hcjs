@@ -51,7 +51,7 @@ li {
 .rating,
 .gallery,
 .location {
-    margin: 4em auto;
+    margin: 1em auto;
 }
 
 .supporting {
@@ -71,12 +71,13 @@ li {
 
 .rating {
     background-color: OrangeRed;
-    height: 20rem;
+    height: 15rem;
     padding: 0 1rem;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+}
 }
 
 

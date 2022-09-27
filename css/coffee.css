@@ -55,9 +55,10 @@ li {
 }
 
 .supporting {
+
     display: flex;
     align-items: flex-start;
-    padding: 0 1rem;
+    padding: 1rem;
 }
 
 

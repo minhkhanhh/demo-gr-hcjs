@@ -200,4 +200,10 @@ footer .container {
     border-top: 5px solid #fff;
     border-right: 5px solid #fff;
 }
-
+.form-control {
+    padding: 1rem !important;
+    margin: 10px;
+}
+.xzc{
+    margin: 0;
+}

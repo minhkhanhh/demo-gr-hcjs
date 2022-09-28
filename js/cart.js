@@ -116,6 +116,6 @@ function updatecart() {
         var quantity = quantity_item.value
         total = total + (price * quantity)
     }
-    document.getElementsByClassName("cart-total-price")[0].innerText = total + 'VNĐ'
+    document.getElementsByClassName("cart-total-price")[0].innerText = total + '$'
 }
 

@@ -12,6 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/cart.css">
 
 </head>
 
@@ -25,35 +26,96 @@
           <li><a href="About.html" target="_self" style="color: white; text-decoration: none">About us</a></li>
           <li><a href="Contact.html" target="_self" style="color: white; text-decoration: none">Contact us</a></li>
           <li><a href="Service.html" target="_self" style="color: white; text-decoration: none">Service</a></li>
-        </ul>
-        <ul class="icon-cart">
-          <li><i class="fa fa-cart-shopping"></i></li>
+
+          <li>
+          <button id="cart">
+            <i class="fa fa-cart-shopping" aria-hidden="true"></i>
+            Cart
+          </button>
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">cart</h5>
+                <span class="close">&times;</span>
+              </div>
+              <div class="modal-body">
+                <div class="cart-row">
+                  <span class="cart-item cart-header cart-column">List</span>
+                  <span class="cart-price cart-header cart-column">Price</span>
+                  <span class="cart-quantity cart-header cart-column">Number</span>
+                </div>
+                <div class="cart-items">
+
+                </div>
+                <div class="cart-total">
+                  <strong class="cart-total-title">Total:</strong>
+                  <span class="cart-total-price">0VNĐ</span>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary close-footer">Close</button>
+                <button type="button" class="btn btn-primary order">Buy</button>
+              </div>
+            </div>
+          </div>
         </ul>
       </div>
+      </li></ul>
+
     </nav>
     <img src="anh/logo.png" />
   </div>
-    <div class="container-fluid py-5">
-      <div class="container">
-        <article class="content">
 
-        <h1>Coffee</h1>
-        <h2>The perfect combination of premium Robusta & Arabica coffee beans grown in the fertile highlands of Vietnam, through unique roasting secrets, Tsunami Coffee we are proud to introduce coffee product lines that bring Rich and delicate flavor.</h2>
+  <div class="container-fluid py-5">
+    <div class="container">
+      <article class="content wrapper">
+        <div class="content col products">
+          <div class="row ">
 
-
-        <div class="content col">
-          <div class="row">
-            <div class="col-4">
+            <div class="col-4 main-product">
               <div class="card mt-3 mb-3">
-
-
                 <div class="img-wrapper">
                   <a href="detail.html"> <img  id="thucdon1" class="inner-img thucdon" style="cursor: pointer" src="anh/Bac-xiu-la-gi-nguon-goc-va-cach-lam-bac-xiu-thom-ngon-don-gian-tai-nha-0-1200x676.jpg"></a>
                 </div>
                 <div class="card-body" style="cursor: pointer;">
-                  <h4> <a href="detail.html" > VIETNAM COFFEE </a></h4>
+                  <h4> <a href="detail.html" > BẠC XỈU ĐÁ</a></h4>
                   <p> </p>
-                  <p class="text-danger">5$</p>
+                  <p class="text-danger">Giá: 29,000 VNĐ</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-4 main-product">
+              <div class="card mt-3 mb-3">
+                <div class="img-wrapper img-product">
+                 <a href="detail1.html"> <img class="inner-img thucdon img-prd" style="cursor: pointer" src="anh/Ca-phe-sua-da.jpg"></a>
+                </div>
+                <div class="card-body content-product" style="cursor: pointer;">
+                  <h4 class="content-product-h3"><a href="detail1.html">CÀ PHÊ SỮA ĐÁ</a> </h4>
+                  <div class="content-product-deltals">
+                    <div class="price">
+                      <span class="money">25000đ</span>
+                    </div>
+                    <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-4">
+              <div class="card mt-3 mb-3">
+                <div class="img-wrapper img-product">
+                  <a href="detail1.html"> <img class="inner-img thucdon img-prd" style="cursor: pointer" src="anh/Bac-xiu-la-gi-nguon-goc-va-cach-lam-bac-xiu-thom-ngon-don-gian-tai-nha-0-1200x676.jpg"></a>
+                </div>
+                <div class="card-body content-product" style="cursor: pointer;">
+                  <h4 class="content-product-h3"><a href="detail1.html">BẠC XỈU ĐÁ</a> </h4>
+                  <div class="content-product-deltals">
+                    <div class="price">
+                      <span class="money">20000đ</span>
+                    </div>
+                    <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -61,38 +123,12 @@
             <div class="col-4">
               <div class="card mt-3 mb-3">
                 <div class="img-wrapper">
-                 <a href="detail1.html"> <img class="inner-img thucdon" style="cursor: pointer" src="anh/Ca-phe-sua-da.jpg"></a>
-                </div>
-                <div class="card-body" style="cursor: pointer;">
-                  <h4><a href="detail1.html">MILK ICE COFFE </a> </h4>
-                  <p></p>
-                  <p class="text-danger">5$</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-4">
-              <div class="card mt-3 mb-3">
-                <div class="img-wrapper">
-                 <a href="detail2.html"> <img class="inner-img thucdon" style="cursor: pointer" src="anh/caphedenda.jpg"></a>
-                </div>
-                <div class="card-body" style="cursor: pointer;">
-                  <h4><a href="detail2.html">BLACK ICE COFFEE </a></h4>
-                  <p></p>
-                  <p class="text-danger">5$</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-4">
-              <div class="card mt-3 mb-3">
-                <div class="img-wrapper">
-                 <a href="detail3.html" ><img class="inner-img thucdon" style="cursor: pointer" src="anh/caphedennong.jpeg"></a>
+                 <a href="detail3.html" ><img class="inner-img thucdon" style="cursor: pointer" src="anh/Ca-phe-sua-da.jpg"></a>
                 </div>
                 <div class="card-body">
-                  <h4><a href="detail3.html" >HOT BLACK COFFEE</a></h4>
+                  <h4><a href="detail3.html" >CÀ PHÊ ĐEN ĐÁ</a></h4>
                   <p></p>
-                  <p class="text-danger">5$</p>
+                  <p class="text-danger">Giá: 29,000 VNĐ</p>
                 </div>
               </div>
             </div>
@@ -100,12 +136,12 @@
             <div class="col-4">
               <div class="card mt-3 mb-3">
                 <div class="img-wrapper">
-                  <a href="detail4.html"> <img class="inner-img thucdon" style="cursor: pointer" src="anh/caphesuanong.jpg"></a>
+                  <a href="detail4.html"> <img class="inner-img thucdon" style="cursor: pointer" src="anh/Ca-phe-sua-da.jpg"></a>
                 </div>
                 <div class="card-body">
-                  <h4><a href="detail4.html">HOT MILK COFFEE</a></h4>
+                  <h4><a href="detail4.html">CÀ PHÊ ĐEN ĐÁ</a></h4>
                   <p></p>
-                  <p class="text-danger">5$</p>
+                  <p class="text-danger">Giá: 29,000 VNĐ</p>
                 </div>
               </div>
             </div>
@@ -113,28 +149,29 @@
             <div class="col-4">
               <div class="card mt-3 mb-3">
                 <div class="img-wrapper">
-                  <a href="detail5.html"> <img class="inner-img thucdon" style="cursor: pointer" src="anh/hanh%20nhan.jpg"></a>
+                  <a href="detail5.html"> <img class="inner-img thucdon" style="cursor: pointer" src="anh/Ca-phe-sua-da.jpg"></a>
                 </div>
                 <div class="card-body">
-                  <h4><a href="detail5.html">PHINDI ALMONDY</a></h4>
+                  <h4><a href="detail5.html">CÀ PHÊ ĐEN ĐÁ</a></h4>
                   <p></p>
-                  <p class="text-danger">10$</p>
+                  <p class="text-danger">Giá: 29,000 VNĐ</p>
                 </div>
               </div>
             </div>
 
             <h1>FREZZY</h1>
-            <h2>Refreshing with Vietnamese-style iced drink. Freeze is a cool iced drink made from pure Vietnamese ingredients.</h2>
+            <h2>Sảng khoái với thức uống đá xay phong cách Việt. Freeze là thức uống đá xay mát lạnh được pha chế từ
+              những nguyên liệu thuần túy của Việt Nam.</h2>
 
             <div class="col-4">
               <div class="card mt-3 mb-3">
                 <div class="img-wrapper">
-                  <a href="detail6.html"> <img class="inner-img thucdon" style="cursor: pointer" src="anh/tra%20xanh.png"> </a>
+                  <a href="detail6.html"> <img class="inner-img thucdon" style="cursor: pointer" src="anh/Ca-phe-sua-da.jpg"> </a>
                 </div>
                 <div class="card-body">
-                  <h4><a href="detail6.html">FREEZE MATCHA </a></h4>
+                  <h4><a href="detail6.html">CÀ PHÊ ĐEN ĐÁ</a></h4>
                   <p></p>
-                  <p class="text-danger">10$</p>
+                  <p class="text-danger">Giá: 29,000 VNĐ</p>
                 </div>
               </div>
             </div>
@@ -142,12 +179,12 @@
             <div class="col-4">
               <div class="card mt-3 mb-3">
                 <div class="img-wrapper">
-                 <a href="detail7.html"> <img class="inner-img thucdon" style="cursor: pointer" src="anh/cookie.jpg"></a>
+                 <a href="detail7.html"> <img class="inner-img thucdon" style="cursor: pointer" src="anh/Ca-phe-sua-da.jpg"></a>
                 </div>
                 <div class="card-body">
-                  <h4><a href="detail7.html">COOKIES CREAM</a></h4>
+                  <h4><a href="detail7.html">CÀ PHÊ ĐEN ĐÁ</a></h4>
                   <p></p>
-                  <p class="text-danger">10$</p>
+                  <p class="text-danger">Giá: 29,000 VNĐ</p>
                 </div>
               </div>
             </div>
@@ -155,12 +192,12 @@
             <div class="col-4">
               <div class="card mt-3 mb-3">
                 <div class="img-wrapper">
-                  <a href="detail8.html"> <img class="inner-img thucdon" style="cursor: pointer" src="anh/socola.jpg"></a>
+                  <a href="detail8.html"> <img class="inner-img thucdon" style="cursor: pointer" src="anh/Ca-phe-sua-da.jpg"></a>
                 </div>
                 <div class="card-body">
-                  <h4><a href="detail8.html">FREEZE CHOCOLATE</a></h4>
+                  <h4><a href="detail8.html">CÀ PHÊ ĐEN ĐÁ</a></h4>
                   <p></p>
-                  <p class="text-danger">10$</p>
+                  <p class="text-danger">Giá: 29,000 VNĐ</p>
                 </div>
               </div>
             </div>
@@ -168,41 +205,29 @@
             <div class="col-4">
               <div class="card mt-3 mb-3">
                 <div class="img-wrapper">
-                  <a href="detail9.html"> <img class="inner-img thucdon" style="cursor: pointer" src="anh/caramel.jpg"></a>
+                  <a href="detail9.html"> <img class="inner-img thucdon" style="cursor: pointer" src="anh/Ca-phe-sua-da.jpg"></a>
                 </div>
                 <div class="card-body">
-                  <h4><a href="detail9.html">CARAMEL PHIN FREEZE</a></h4>
+                  <h4><a href="detail9.html">CÀ PHÊ ĐEN ĐÁ</a></h4>
                   <p></p>
-                  <p class="text-danger">10$</p>
+                  <p class="text-danger">Giá: 29,000 VNĐ</p>
                 </div>
               </div>
             </div>
 
-            <h1>TEA</h1>
-            <h2>The natural and delicious taste of Vietnamese Tea with a modern style at Tsunami Coffee will help you evoke your taste buds and enjoy a feeling of refreshment and freshness.</h2>
+            <h1>TRÀ</h1>
+            <h2>Hương vị tự nhiên, thơm ngon của Trà Việt với phong cách hiện đại tại Highlands Coffee sẽ giúp bạn gợi
+              mở vị giác của bản thân và tận hưởng một cảm giác thật khoan khoái, tươi mới.</h2>
 
             <div class="col-4">
               <div class="card mt-3 mb-3">
                 <div class="img-wrapper">
-                  <a href="detail10.html"> <img class="inner-img thucdon" style="cursor: pointer" src="anh/tra%20xoai.jpg"></a>
+                  <a href="detail10.html"> <img class="inner-img thucdon" style="cursor: pointer" src="anh/Ca-phe-sua-da.jpg"></a>
                 </div>
                 <div class="card-body">
-                  <h4><a href="detail10.html">TEMPORARY MANGO TEA</a></h4>
+                  <h4><a href="detail10.html">CÀ PHÊ ĐEN ĐÁ</a></h4>
                   <p></p>
-                  <p class="text-danger">10$</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-4">
-              <div class="card mt-3 mb-3">
-                <div class="img-wrapper">
-                  <a href="detail11.html"><img class="inner-img thucdon" style="cursor: pointer" src="anh/tra%20oi.jpg"></a>
-                </div>
-                <div class="card-body">
-                  <h4><a href="detail11.html">PINK GUAVA AND LEMON TEA   </a></h4>
-                  <p></p>
-                  <p class="text-danger">10$</p>
+                  <p class="text-danger">Giá: 29,000 VNĐ</p>
                 </div>
               </div>
             </div>
@@ -210,12 +235,12 @@
             <div class="col-4">
               <div class="card mt-3 mb-3">
                 <div class="img-wrapper">
-                  <a href="detail12.html"> <img class="inner-img thucdon" style="cursor: pointer" src="anh/tra%20xanh%20dau%20do.jpg"></a>
+                  <a href="detail11.html"><img class="inner-img thucdon" style="cursor: pointer" src="anh/Ca-phe-sua-da.jpg"></a>
                 </div>
                 <div class="card-body">
-                  <h4><a href="detail12.html">GREEN TEA RED BEAUTY</a></h4>
+                  <h4><a href="detail11.html">CÀ PHÊ ĐEN ĐÁ</a></h4>
                   <p></p>
-                  <p class="text-danger">10$</p>
+                  <p class="text-danger">Giá: 29,000 VNĐ</p>
                 </div>
               </div>
             </div>
@@ -223,12 +248,12 @@
             <div class="col-4">
               <div class="card mt-3 mb-3">
                 <div class="img-wrapper">
-                  <a href="detail13.html"> <img class="inner-img thucdon" style="cursor: pointer" src="anh/tra%20dao.jpg"></a>
+                  <a href="detail12.html"> <img class="inner-img thucdon" style="cursor: pointer" src="anh/Ca-phe-sua-da.jpg"></a>
                 </div>
                 <div class="card-body">
-                  <h4><a href="detail13.html">DELICIOUS TEA</a></h4>
+                  <h4><a href="detail12.html">CÀ PHÊ ĐEN ĐÁ</a></h4>
                   <p></p>
-                  <p class="text-danger">10$</p>
+                  <p class="text-danger">Giá: 29,000 VNĐ</p>
                 </div>
               </div>
             </div>
@@ -236,12 +261,25 @@
             <div class="col-4">
               <div class="card mt-3 mb-3">
                 <div class="img-wrapper">
-                  <a href="detail14.html"> <img class="inner-img thucdon" style="cursor: pointer" src="anh/tra%20sen%20vang.jpg"></a>
+                  <a href="detail13.html"> <img class="inner-img thucdon" style="cursor: pointer" src="anh/Ca-phe-sua-da.jpg"></a>
                 </div>
                 <div class="card-body">
-                  <h4><a href="detail14.html">GOLDEN LOTUS TEA</a></h4>
+                  <h4><a href="detail13.html">CÀ PHÊ ĐEN ĐÁ</a></h4>
                   <p></p>
-                  <p class="text-danger">10$</p>
+                  <p class="text-danger">Giá: 29,000 VNĐ</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-4">
+              <div class="card mt-3 mb-3">
+                <div class="img-wrapper">
+                  <a href="detail14.html"> <img class="inner-img thucdon" style="cursor: pointer" src="anh/Ca-phe-sua-da.jpg"></a>
+                </div>
+                <div class="card-body">
+                  <h4><a href="detail14.html">CÀ PHÊ ĐEN ĐÁ</a></h4>
+                  <p></p>
+                  <p class="text-danger">Giá: 29,000 VNĐ</p>
                 </div>
               </div>
             </div>
@@ -305,6 +343,8 @@
   <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"></a>
 
   <script type="text/javascript" src="list/dist/js/bootstrap.js"></script>
+<script type="text/javascript" src="list/jquery/jquery1.js"></script>
+<script type="text/javascript" src="js/cart.js"></script>
 </body>
 
 </html>

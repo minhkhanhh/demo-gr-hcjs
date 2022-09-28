@@ -73,14 +73,13 @@ h5.modal-title {
 }
 
 #cart {
-    font-size: 15px;
+    font-size: 18px;
     color: #fff;
-    background: #c7b200;
+    background: #473732;
     border: 1px solid transparent;
     border-radius: 10px;
     outline: none;
-    margin-left: 1rem;
-    padding: 12px;
+    margin-left: 2rem;
     cursor: pointer;
 }
 

@@ -6,7 +6,7 @@ body {
     background-color: white;
 }
 
-/* mainhanda o day*/
+
 .container {
     max-width: 960px;
     margin: 0 auto;
@@ -214,3 +214,4 @@ footer .container {
     border-top: 5px solid #fff;
     border-right: 5px solid #fff;
 }
+

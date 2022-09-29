@@ -25,10 +25,10 @@
     text-align: center;
     white-space: nowrap;
     vertical-align: middle;
-    border: 1px solid transparent;
+
     padding: .5rem 1rem;
     font-size: 1rem;
-    border-radius: .25rem;
+
     transition: all .2s ease-in-out;
 }
 

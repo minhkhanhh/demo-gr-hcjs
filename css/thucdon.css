@@ -202,7 +202,7 @@ footer .container {
     /* visual styling */
     width: 45px;
     aspect-ratio: 1;
-    background: #ff8b24;
+    background: #ff8b24 !important;
     border-radius: 10px;
 }
 

@@ -20,14 +20,13 @@
 .btn {
     cursor: pointer;
     outline: none;
-    font-weight: 400;
-    line-height: 1.25;
+
     text-align: center;
     white-space: nowrap;
     vertical-align: middle;
 
     padding: .5rem 1rem;
-    font-size: 1rem;
+
 
     transition: all .2s ease-in-out;
 }
@@ -153,7 +152,7 @@ h5.modal-title {
     background-color: #EB5757;
     border: none;
     border-radius: .3em;
-    font-weight: bold;
+
 }
 
 .btn-danger:hover {

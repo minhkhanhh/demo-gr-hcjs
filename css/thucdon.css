@@ -192,7 +192,7 @@ footer .container {
 }
 
 .back-to-top {
-    position: sticky;
+    position: fixed;
     bottom: 20px;
     margin-right: 10px;
     place-self: end;
@@ -204,6 +204,7 @@ footer .container {
     aspect-ratio: 1;
     background: #ff8b24 !important;
     border-radius: 10px;
+    margin-left: 237px;
 }
 
 .back-to-top:before {

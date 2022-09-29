@@ -212,3 +212,7 @@ h5.modal-title {
 .cart-item-title{
     font-size: medium;
 }
+
+.cart-price .cart-column{
+    text-align: center;
+}

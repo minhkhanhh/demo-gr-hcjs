@@ -80,7 +80,7 @@ function addItemToCart(title, price, img) {
 
     var cartRowContents = `
   <div class="cart-item cart-column">
-      <img class="cart-item-image" src="${img}" width="100" height="100">
+      <img class="cart-item-image" src="${img}" width="50" height="50">
       <span class="cart-item-title">${title}</span>
   </div>
   <span class="cart-price cart-column">${price}</span>

@@ -204,3 +204,11 @@ h5.modal-title {
     color: white;
     float: right;
 }
+
+.cart-item .cart-column {
+    width: 115 px;
+}
+
+.cart-item-title{
+    font-size: medium;
+}

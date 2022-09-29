@@ -206,13 +206,14 @@ h5.modal-title {
 }
 
 .cart-item .cart-column {
-    width: 115 px;
+    width: 115px;
 }
 
 .cart-item-title{
-    font-size: medium;
+    font-size: small;
+    color: #2542ff;
 }
+.cart-item-image{
+    zoom: 50%;
 
-.cart-price .cart-column{
-    text-align: center;
 }

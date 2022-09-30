@@ -214,5 +214,14 @@ h5.modal-title {
 }
 .cart-item-image{
     zoom: 50%;
+}
 
+.img-product img{
+    zoom: 90%;
+}
+
+.nav-tabs {
+
+    background-color: white;
+    color: #222222;
 }
